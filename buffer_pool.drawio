@@ -1,1 +1,61 @@
-<mxfile host="app.diagrams.net" modified="2021-06-08T13:01:46.324Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.7.6" etag="-R44rrf93z4KJv916riv" type="github"><diagram id="_IOYvcI6NPBi4Ve4yy4Y">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-08T13:30:12.930Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="rxLb0tkJgtwI3fshUEPN" version="14.7.6" type="github">
+  <diagram id="_IOYvcI6NPBi4Ve4yy4Y" name="第 1 页">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="quUcJhqBkwmNajqVeeIg-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="quUcJhqBkwmNajqVeeIg-1" target="quUcJhqBkwmNajqVeeIg-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-1" value="InnoDB" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;horizontal=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="100" width="420" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-5" value="Buffer Pool&lt;br&gt;缓冲池" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="quUcJhqBkwmNajqVeeIg-6" target="quUcJhqBkwmNajqVeeIg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-6" value="硬盘" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-8" value="1. 加载缓存数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="170" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-9" value="Undo Log 文件" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="253" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-12" value="2. 写入数据的旧值" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="240" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="quUcJhqBkwmNajqVeeIg-5" target="quUcJhqBkwmNajqVeeIg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-14" value="3. 更新内存中的数据" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="253" width="153" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-15" value="Redo Buffer Log" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="quUcJhqBkwmNajqVeeIg-15" target="quUcJhqBkwmNajqVeeIg-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="quUcJhqBkwmNajqVeeIg-14" target="quUcJhqBkwmNajqVeeIg-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="quUcJhqBkwmNajqVeeIg-20" target="quUcJhqBkwmNajqVeeIg-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-20" value="4. 写redo log" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="253" width="153" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-24" value="Redo Log 文件" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-263.5" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="quUcJhqBkwmNajqVeeIg-26" value="5. 刷入硬盘中" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="340" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
